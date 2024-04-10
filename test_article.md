@@ -1,5 +1,5 @@
 ---
-title: "Folder Encapsulation: Fixing your JavaScript folder structure"
+title: "Folder Encapsulation: Fixing your JavaScript folder structure(auto test)"
 description: ""
 date: 2024-03-22T14:43:12.773Z
 preview: ""
