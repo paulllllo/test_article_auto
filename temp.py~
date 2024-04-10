@@ -1,0 +1,10 @@
+import frontmatter
+
+data = frontmatter.load('test_article.md')
+print(f'keys***{data.keys()}')
+print(f'draft***{data["draft"]}')
+print(f'preview***{data["preview"]}')
+
+with open('test_article.md', 'r') as f:
+    content = f.read()
+    print(f'content***{content}')
