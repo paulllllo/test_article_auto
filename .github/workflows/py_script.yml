@@ -1,36 +1,20 @@
- name: Python Script
+name: Automate dev
 
 on: [push]
 
-
 jobs:
-
-run-script:
-
-runs-on: ubuntu-latest
-
-steps:
-
-- name: Checkout repository
-
-uses: actions/checkout@v2
-
-- name: Set up Python
-
-uses: actions/setup-python@v2
-
-with:
-
-python-version: '3.9'
-
-- name: Install dependencies
-
-run: pip install -r requirements.txt
-
-- name: Post on dev
-
-run: python3 -m devapi
-
-- name: Post on medium
-
-run: python3 -m mediumapi
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Post on DEV
+        run: python3 -m devapi
+      - name: Post on Medium
+        run: python3 -m mediumapi
