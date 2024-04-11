@@ -27,6 +27,10 @@ python-version: '3.9'
 
 run: pip install -r requirements.txt
 
-- name: Run script
+- name: Post on dev
 
 run: python3 -m devapi
+
+- name: Post on medium
+
+run: python3 -m mediumapi
